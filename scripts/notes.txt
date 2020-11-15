@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "./main.py", line 69, in index
+    post = json.loads(decryptLink(postCt).decode('utf8'))
+  File "./common.py", line 46, in decryptLink
+    data = b64d(data)
+  File "./common.py", line 11, in <lambda>
+    b64d = lambda x: base64.decodestring(x.replace('~', '=').replace('!', '/').replace('-', '+'))
+  File "/usr/local/lib/python2.7/base64.py", line 328, in decodestring
+    return binascii.a2b_base64(s)
+Error: Incorrect padding
+
+
+GET /a891db795c/?post=lCyh1WAe5gpVmVAnt0WoVEEFRjpx3ElJzKHhOtbR8CV8aWMmvRoZeUkMxRK3F7kVa5pw!SMGXnpAIJGS0clfADx4yrRSZYmo0PY8oRmqS3fn1NRmYNCM6MycN6XYlIuU6maVGNvVakNUJI9pkUo!36039VVJIWra8SyYMSLiAV9vPCAPDV5cA-RzHs3qDIE8bVMhSfKNKKt6SZNY5BVdRg~~ HTTP/1.1
+
+
+
+Block 9 Results:
+[+] Cipher Text (HEX): 9b25af9635df3d63551d06bd9351eec4
+[+] Intermediate Bytes (HEX): daf35ad3f2e1dbf054d4acded1bad3ab
+[+] Plain Text: ?&?%~???kY$??E
+
+
+-------------------------------------------------------
+** Finished ***
+
+[+] Decrypted value (ASCII): {"flag": "^FLAG^6fd3f95c42e58208b50d46150e17a3c716fe5870c022f9628930597dfbe2e842$FLAG$", "id": "5", "key":
+ "y4P8;???OR8doEZNYY?&?%~???kY$??E
+
+
+[+] Decrypted value (HEX): 7B22666C6167223A20225E464C41475E3666643366393563343265353832303862353064343631353065313761336337313666653538
+373063303232663936323839333035393764666265326538343224464C414724222C20226964223A202235222C20226B6579223A2022793450381BA13BD5DDE24F52386
+46F455A4E5959AA26F9257EA9D0B3D86B592489C5450A
+
+[+] Decrypted value (Base64): eyJmbGFnIjogIl5GTEFHXjZmZDNmOTVjNDJlNTgyMDhiNTBkNDYxNTBlMTdhM2M3MTZmZTU4NzBjMDIyZjk2Mjg5MzA1OTdkZmJlMmU4N
+DIkRkxBRyQiLCAiaWQiOiAiNSIsICJrZXkiOiAieTRQOBuhO9Xd4k9SOGRvRVpOWVmqJvklfqnQs9hrWSSJxUUK
